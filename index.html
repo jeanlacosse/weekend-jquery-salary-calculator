@@ -4,49 +4,59 @@
 <head>
     <script src="./jquery.js"></script>
     <script src="./script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <h1>Salary Calculator</h1>
 
-    
+
     <table>
         <thead>
             <h2>Add Employee</h2>
+            <input type="text" placeholder="First Name" id="firstName" class="inputBoxes">
+            <input type="text" placeholder="Last Name" id="lastName" class="inputBoxes">
+            <input type="number" placeholder="ID Number" id="idNumber" class="inputBoxes">
+            <input type="text" placeholder="Job Title" id="jobTitle" class="inputBoxes">
+            <input type="number" placeholder="Annual Salary" id="annualSalary" class="inputBoxes">
+            <button id="submitInfo">Submit</button>
+            <div id="employees">Employees</div>
             <tr class="tableHead">
-                <th>
-                    <input type="text" placeholder="First Name" id="firstName" class="inputBoxes">
+                <th class="tableHead">
+                    First Name
                 </th>
-                <th>
-                    <input type="text" placeholder="Last Name" id="lastName" class="inputBoxes">
+                <th class="tableHead">
+                    Last Name
                 </th>
-                <th>
-                    <input type="number" placeholder="ID Number" id="idNumber" class="inputBoxes">
+                <th class="tableHead">
+                    ID#
                 </th>
-                <th>
-                    <input type="text" placeholder="Job Title" id="jobTitle" class="inputBoxes">
+                <th class="tableHead">
+                    Title
                 </th>
-                <th>
-                    <input type="number" placeholder="Annual Salary" id="annualSalary" class="inputBoxes">
+                <th class="tableHead"> 
+                    Annual Salary
                 </th>
-                <th>
-                    <button id="submitInfo">Submit</button>
-                </th>
+           
             </tr>
         </thead>
-           
+
         <tbody id="infoBody">
-              
+
         </tbody>
+   
+
     </table>
-    <h2>
+    <div id="underTable"></div>
+    <h3>
         Total Monthly Cost: $<span id="monthlyCost"></span>
-    </h2>
+    </h3>
 </body>
 
 </html>

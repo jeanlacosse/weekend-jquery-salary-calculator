@@ -18,11 +18,11 @@ function submitInfo() {
     // append to the table
     $('#infoBody').append(`
     <tr>
-    <td class='emp'>${firstName}</td>
-    <td class='emp'>${lastName}</td>
-    <td class='emp'>${idNumber}</td>
-    <td class='emp'>${jobTitle}</td>
-    <td id='empSal'>${annualSalary}</td>
+    <td class='emp grid'>${firstName}</td>
+    <td class='emp grid'>${lastName}</td>
+    <td class='emp grid'>${idNumber}</td>
+    <td class='emp grid'>${jobTitle}</td>
+    <td id='empSal' class='grid'>$${annualSalary}</td>
     <td>
          <button id="deleteEmp">Delete Employee</button>
     </td>

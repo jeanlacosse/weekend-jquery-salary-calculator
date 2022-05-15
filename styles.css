@@ -12,27 +12,79 @@ h1 {
 
 .inputBoxes {
     padding: 5px;
-    width: 87%;
+    width: 14%;
     margin: 5px;
     border: 2px solid black;
+    display: inline;
 }
 
 /* how can i change in input text opacity? */
 
 #submitInfo {
-    display: inline;
     padding: 2px;
-    width: 169%;
+    width: 11%;
     font-size: 19px;
     border-radius: 7px;
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+}
+
+#employees {
+    font-size: 22px;
+    margin-left: 3px;
+    margin-bottom: 8px;
+}
+
+.tableHead {
+    padding: 5px;
+    font-size: 19px;
+    background-color: #d2d0d0;
+    border: 1px solid black;
+    width: 18%;
+    align-content: left;
+    text-indent: none;
+    border-spacing: none;
+
+}
+
+#infoBody {
+    text-align: left;
+    font-size: 20px;
+}
+
+.grid {
+    border: 1px solid black;
+}
+
+h3 {
+    font-size: 22px;
+    text-align: right;
+    margin-right: 105px;
+}
+
+#deleteEmp {
+    padding: 1px;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+}
+
+#underTable {
+    background-color: #dedede;
+    padding: 20px;
+    display: inline-block;
+    width: 65%;
+    border: 1px solid black;
 }
 
 /* TODO
-[] add html employees section
-    [] create new table to hold the employees seperate from the input boxes
-[] get subit button in its own area
+[x] add html employees section
+    [x] create new table to hold the employees seperate from the input boxes
+[x] get subit button in its own area
 [] color the rows of the table to be different from each other
-[] have a row under the table which is empty
-[] move total monthly to bottom left
-[] try adding in new fonts from google
+[x] have a row under the table which is empty
+[x] move total monthly to bottom right
+[x] try adding in new fonts from google
 */
