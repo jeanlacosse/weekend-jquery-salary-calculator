@@ -1,0 +1,38 @@
+.overBudget {
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+    background-color: #969292;
+    color: white;
+    padding: 25px;
+    margin-top: none;
+}
+
+.inputBoxes {
+    padding: 5px;
+    width: 87%;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+/* how can i change in input text opacity? */
+
+#submitInfo {
+    display: inline;
+    padding: 2px;
+    width: 169%;
+    font-size: 19px;
+    border-radius: 7px;
+}
+
+/* TODO
+[] add html employees section
+    [] create new table to hold the employees seperate from the input boxes
+[] get subit button in its own area
+[] color the rows of the table to be different from each other
+[] have a row under the table which is empty
+[] move total monthly to bottom left
+[] try adding in new fonts from google
+*/

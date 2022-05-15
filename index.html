@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./jquery.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Salary Calculator</h1>
+
+    
+    <table>
+        <thead>
+            <h2>Add Employee</h2>
+            <tr class="tableHead">
+                <th>
+                    <input type="text" placeholder="First Name" id="firstName" class="inputBoxes">
+                </th>
+                <th>
+                    <input type="text" placeholder="Last Name" id="lastName" class="inputBoxes">
+                </th>
+                <th>
+                    <input type="number" placeholder="ID Number" id="idNumber" class="inputBoxes">
+                </th>
+                <th>
+                    <input type="text" placeholder="Job Title" id="jobTitle" class="inputBoxes">
+                </th>
+                <th>
+                    <input type="number" placeholder="Annual Salary" id="annualSalary" class="inputBoxes">
+                </th>
+                <th>
+                    <button id="submitInfo">Submit</button>
+                </th>
+            </tr>
+        </thead>
+           
+        <tbody id="infoBody">
+              
+        </tbody>
+    </table>
+    <h2>
+        Total Monthly Cost: $<span id="monthlyCost"></span>
+    </h2>
+</body>
+
+</html>
