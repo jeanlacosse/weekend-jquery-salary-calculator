@@ -2,14 +2,20 @@ console.log('In the script.js')
 
 $(document).ready(onReady);
 
+// array for salaries
+let combinedSalaries = [];
+// global variables/arrays should be on top of the file to know it is going to be used in the doc
+
 function onReady() {
     console.log('we ready!')
     // console.log everything first and make sure all the connections are there before moving on. Writing the function not important until later, first need to just see that connection worked.
     $(document).on('click', '#submitInfo', submitInfo)
     $(document).on('click', '#deleteEmp', deleteEmp)
 }
+
 // get the value of input fields
 function submitInfo() {
+    // create the getter
     let firstName = $('#firstName').val();
     // not a bad idea to do a console.log after each input to make sure each is working
     // always copy and paste from my html to get the correct id names and variable names
@@ -20,6 +26,18 @@ function submitInfo() {
 
     console.log(firstName, lastName, idNumber, jobTitle, annualSalary);
 
+
+    // live solve, create object
+    // will push into a global array, in many places in web dev there are lists of objects
+    let newEmployee = {
+        firstName: firstName,
+        lastName: lastName,
+        idNumber: idNumber,
+        jobTitle: jobTitle,
+        annualSalary: annualSalary,
+    }
+
+    console.log(newEmployee);
     // append to the table
     $('#infoBody').append(`
     <tr>
@@ -40,17 +58,20 @@ function submitInfo() {
     // run function to calculate monthly cost
     monthlyCost();
 
-    // reset the values
-    $('#firstName').val('');
-    $('#lastName').val('');
-    $('#idNumber').val('');
-    $('#jobTitle').val('');
-    $('#annualSalary').val('');
+    // reset the values, setter
+    // $('#firstName').val('');
+    // $('#lastName').val('');
+    // $('#idNumber').val('');
+    // $('#jobTitle').val('');
+    // $('#annualSalary').val('');
+
+
+    // this uses class instead of id to reset all at once
+    $('.inputBoxes').val('');
 
 
 }
-// array for salaries
-combinedSalaries = [];
+
 
 // run monthly cost on click that will loop through the array and add to variable totalCost
 let monthlyCost = () => {
