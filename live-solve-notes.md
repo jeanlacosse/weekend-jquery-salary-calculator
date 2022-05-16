@@ -5,9 +5,9 @@ Breaking down the starting todo list ---
 TODO
 
 [] collect salary data
-    [] form
-        []html input fields
-        []submit button
+    [x] form
+        [x]html input fields
+        [x]submit button
         []click listener
             [] add function
             [] clear input fields
@@ -29,19 +29,21 @@ TODO
             []recalc monthly - subtract their salary
 
 PROJECT SETUP
-[] index.html
+[x] index.html
 
-[] styles folder
+[x] styles folder
     [] styles.css
 
-[] scripts folder
+[x] scripts folder
     [] script.js
 
-[]vendors folder - everything I didn't write
+[x]vendors folder - everything I didn't write
      [] jquery.js
 
-[] boilerplate html code
-    [] change html title to project title
-    [] link the js files - vendors first - use "script"
+[x] boilerplate html code
+    [x] change html title to project title
+    [x] link the js files - vendors first - use "script"
         -JQ is a dependency to write the rest of my code
-    [] link stylesheet via relative path
+    [x] link stylesheet via relative path
+
+Extra Notes -

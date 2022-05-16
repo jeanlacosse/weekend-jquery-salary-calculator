@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-    <script src="./jquery.js"></script>
-    <script src="./script.js"></script>
-   
+    <script src="./vendors/jquery.js"></script>
+    <script src="./scripts/script.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Salary Calculator</title>
 </head>
 
 <body>
-    <h1>Salary Calculator</h1>
-
-
+    <!-- only 1 h1 per page -->
+    <header>
+        <h1>Salary Calculator</h1>
+    </header>
+    <!-- header, footer, section etc. Same as a div but has a name that makes it easier to figure out where I am. Still just a box inside a box though -->
     <table>
         <thead>
             <h2>Add Employee</h2>
@@ -40,17 +42,17 @@
                 <th class="tableHead">
                     Title
                 </th>
-                <th class="tableHead"> 
+                <th class="tableHead">
                     Annual Salary
                 </th>
-           
+
             </tr>
         </thead>
 
         <tbody id="infoBody">
 
         </tbody>
-   
+
 
     </table>
     <div id="underTable"></div>

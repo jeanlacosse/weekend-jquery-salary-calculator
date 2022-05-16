@@ -4,16 +4,21 @@ $(document).ready(onReady);
 
 function onReady() {
     console.log('we ready!')
+    // console.log everything first and make sure all the connections are there before moving on. Writing the function not important until later, first need to just see that connection worked.
     $(document).on('click', '#submitInfo', submitInfo)
     $(document).on('click', '#deleteEmp', deleteEmp)
 }
 // get the value of input fields
 function submitInfo() {
     let firstName = $('#firstName').val();
+    // not a bad idea to do a console.log after each input to make sure each is working
+    // always copy and paste from my html to get the correct id names and variable names
     let lastName = $('#lastName').val();
     let idNumber = $('#idNumber').val();
     let jobTitle = $('#jobTitle').val();
     let annualSalary = $('#annualSalary').val();
+
+    console.log(firstName, lastName, idNumber, jobTitle, annualSalary);
 
     // append to the table
     $('#infoBody').append(`
