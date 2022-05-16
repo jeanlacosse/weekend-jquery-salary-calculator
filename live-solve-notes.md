@@ -39,3 +39,9 @@ PROJECT SETUP
 
 []vendors folder - everything I didn't write
      [] jquery.js
+
+[] boilerplate html code
+    [] change html title to project title
+    [] link the js files - vendors first - use "script"
+        -JQ is a dependency to write the rest of my code
+    [] link stylesheet via relative path
