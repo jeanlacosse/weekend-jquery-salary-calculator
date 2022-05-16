@@ -22,7 +22,7 @@ function submitInfo() {
     <td class='emp grid'>${lastName}</td>
     <td class='emp grid'>${idNumber}</td>
     <td class='emp grid'>${jobTitle}</td>
-    <td id='empSal' class='grid'>$${annualSalary}</td>
+    <td id='empSal' class='grid sal'>$${annualSalary}</td>
     <td>
          <button id="deleteEmp">Delete Employee</button>
     </td>
@@ -50,7 +50,7 @@ combinedSalaries = [];
 // run monthly cost on click that will loop through the array and add to variable totalCost
 let monthlyCost = () => {
     // loop through purchases array
-    let el = $('#monthlyCost')
+    let el = $('#monthlyCost');
     let totalCost = 0;
     for (let i = 0; i < combinedSalaries.length; i++) {
         // add the array string turned into a number, divided by 12, to totalCost
@@ -68,6 +68,8 @@ let monthlyCost = () => {
         el.addClass('overBudget');
     }
 }
+openCost = Number($('#monthlyCost').text())
+console.log(openCost);
 
 function deleteEmp () {
     // empties the rest of the information
@@ -78,19 +80,19 @@ function deleteEmp () {
     // create varialbe for monthly cost total
     let el = $('#monthlyCost')
     // grabbing the text from these variables
-    let total = $('#monthlyCost').text();
-    console.log('in total', total)
+    // let total = $('#monthlyCost').text();
+    // console.log('in total', total)
     //  I cant get it to select the value for the employee on this line only...
-    let currentSal = $(this).parent().siblings('#empSal').text();
+    let currentSal = $(this).parent().siblings('.sal').text();
     console.log('in currentSal', currentSal);
     
     //  turning into numbers and subtracting them
-    let newMonthlyCost = Number(total) - (Number(currentSal) / 12);
-    console.log('in newMonthlyCost', newMonthlyCost);
+    let totalCost = openCost - (Number(currentSal) / 12);
+    console.log('in newMonthlyCost', totalCost);
     // append newMonthlyCost to DOM
     el.empty();
     el.append(`
-    ${newMonthlyCost}
+    ${totalCost}
     `)
 }
 
