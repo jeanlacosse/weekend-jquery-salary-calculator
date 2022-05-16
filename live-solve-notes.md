@@ -25,9 +25,9 @@ TODO
     [] turn red if over $20k
 
 [] delete employee
-    [] delete button for each employee
-        [] click listener
-            [] removes employee from DOM
+    [x] delete button for each employee
+        [x] click listener
+            [x] removes employee from DOM
             []recalc monthly - subtract their salary
 
 PROJECT SETUP

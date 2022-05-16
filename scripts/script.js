@@ -10,7 +10,8 @@ function onReady() {
     console.log('we ready!')
     // console.log everything first and make sure all the connections are there before moving on. Writing the function not important until later, first need to just see that connection worked.
     $(document).on('click', '#submitInfo', submitInfo)
-    $(document).on('click', '#deleteEmp', deleteEmp)
+    // #deleteEmp was appended so needs specific syntax from something does exists when the page loads
+    $(document).on('click', '.deleteEmp', deleteEmp)
 }
 
 // get the value of input fields
@@ -52,7 +53,7 @@ function submitInfo() {
     <td class='emp grid'>${jobTitle}</td>
     <td id='empSal' class='grid sal'>$${annualSalary}</td>
     <td>
-         <button id="deleteEmp">Delete Employee</button>
+         <button class="deleteEmp">Delete Employee</button>
     </td>
     </tr>
     `)
@@ -103,11 +104,17 @@ openCost = Number($('#monthlyCost').text())
 console.log(openCost);
 
 function deleteEmp () {
-    // empties the rest of the information
-    $('.emp').empty();
     // removes the delete employee button
-    let salaryRemove = $('#deleteEmp');
-    salaryRemove.remove();
+    // turn button into class so it applies to all delete buttons
+    // let salaryRemove = $('.deleteEmp');
+
+    // $(this) is specific to context 'who called this function?'
+    // need to remove more than just the single id, needs to traverse the DOM for button to target the specific value
+    $(this).parent().parent().remove();
+    // $(this).parents('tr') works as well
+    // ^method chaining, I am removing the entire <tr> parent
+
+    
     // create varialbe for monthly cost total
     let el = $('#monthlyCost')
     // grabbing the text from these variables
