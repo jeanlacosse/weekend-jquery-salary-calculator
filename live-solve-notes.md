@@ -8,14 +8,16 @@ TODO
     [x] form
         [x]html input fields
         [x]submit button
-        []click listener
-            [] add function
-            [] clear input fields
-            []collect employee
-                []add to array
+        [x]click listener
+            [x] add function
+            [x] clear input fields
+            [x]collect employee
+                [x]add to array
+            [] append to DOM
+
 []employee data
-    [] table - same headings as inputs
-        [] delete button
+    [x] table - same headings as inputs
+        [x] delete button
         [] headers and footers
 
 [] total monthly cost calculation

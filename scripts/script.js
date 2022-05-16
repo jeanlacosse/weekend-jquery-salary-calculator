@@ -37,8 +37,13 @@ function submitInfo() {
         annualSalary: annualSalary,
     }
 
+    // psuedo code: hypotheticalArray.push(newEmployee);
+
     console.log(newEmployee);
     // append to the table
+
+    // live solve: this was put into a new function renderEmployees which apended the global array of objects of employees instead
+    // .text() will only select the information between two html tags
     $('#infoBody').append(`
     <tr>
     <td class='emp grid'>${firstName}</td>

@@ -19,16 +19,18 @@
         <h1>Salary Calculator</h1>
     </header>
     <!-- header, footer, section etc. Same as a div but has a name that makes it easier to figure out where I am. Still just a box inside a box though -->
+    <h2>Add Employee</h2>
+    <input type="text" placeholder="First Name" id="firstName" class="inputBoxes">
+    <input type="text" placeholder="Last Name" id="lastName" class="inputBoxes">
+    <input type="number" placeholder="ID Number" id="idNumber" class="inputBoxes">
+    <input type="text" placeholder="Job Title" id="jobTitle" class="inputBoxes">
+    <input type="number" placeholder="Annual Salary" id="annualSalary" class="inputBoxes">
+    <button id="submitInfo">Submit</button>
+    <div id="employees">Employees</div>
+    <!-- keep the table seperate from above information -->
     <table>
         <thead>
-            <h2>Add Employee</h2>
-            <input type="text" placeholder="First Name" id="firstName" class="inputBoxes">
-            <input type="text" placeholder="Last Name" id="lastName" class="inputBoxes">
-            <input type="number" placeholder="ID Number" id="idNumber" class="inputBoxes">
-            <input type="text" placeholder="Job Title" id="jobTitle" class="inputBoxes">
-            <input type="number" placeholder="Annual Salary" id="annualSalary" class="inputBoxes">
-            <button id="submitInfo">Submit</button>
-            <div id="employees">Employees</div>
+
             <tr class="tableHead">
                 <th class="tableHead">
                     First Name
@@ -45,15 +47,11 @@
                 <th class="tableHead">
                     Annual Salary
                 </th>
-
             </tr>
         </thead>
-
         <tbody id="infoBody">
-
+<!-- when creating what I want to append it is good to hard code in html and then copy that over to the script -->
         </tbody>
-
-
     </table>
     <div id="underTable"></div>
     <h3>
