@@ -1,59 +1,42 @@
-
-![MIT LICENSE](https://img.shields.io/github/license/scottbromander/the_marketplace.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/github/repo-size/scottbromander/the_marketplace.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/scottbromander/the_marketplace.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/scottbromander/the_marketplace.svg?style=social)
-
-# PROJECT NAME
+# Project Name
+Salary Calculator
 
 ## Description
+This project took two days to develop.
 
-_Duration: 2 Week Sprint_
+I wanted to create an app that could take in the data from a number of inputs and show a total monthly cost in the corner.
 
-Directly above this is how long it took you to develop the project. Your project description goes here. What problem did you solve? How did you solve it? 
+I was looking to use jquery in order to process basic calculations and work with input fields.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam at massa in faucibus. Etiam volutpat, risus non mollis convallis, velit nisi pulvinar mi, eu faucibus orci nisi eget nibh. Integer a velit pretium, volutpat arcu eleifend, fringilla elit. Cras erat sapien, convallis venenatis tellus vitae, feugiat dictum felis.
 
-Suspendisse euismod volutpat aliquet. Maecenas vulputate mauris in pellentesque facilisis. Phasellus varius malesuada semper. Cras sollicitudin diam mollis maximus aliquam.
+## Screen Shot 
 
-To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
-
-## Screen Shot
-
-Include one or two screen shots of your project here (optional). Remove if unused.
+![alt text](./pictures/salary-calc-wireframe.png
 
 ### Prerequisites
 
-N/A
+- JQuery
+- Javascript
+- CSS
 
 ## Installation
 
-1. Open the index.html file in the browser
-
+1. Open the index.html file in teh broswer
 
 ## Usage
-How does someone use this application? Tell a user story here.
 
-1. Use the input fields for the employee name, ID number, job title, and annual salary
-2. press submit button
-3. The total monthly cost will be updated with each added employee
-4. If total monthly cost exceeds $20,000 it will turn red
-5. press the delete employee button to remove employee from list except their salary
-6. Total monthly cost should reflect removing a deleted employee
-
+1. Enter the required information into the input fields
+2. Clicking submit will add the employee information to the table as well as create a total monthly cost.
+3. If the total monthly cost is over $20,000 it will turn red.
 
 ## Built With
 
-HTML
-CSS
-Javascript
-Jquery Framework
-
-## License
-N/A
+- JQuery
+- Javascript
+- CSS
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. 
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
 
 ## Support
-If you have suggestions or issues, please email me at [jeanlacosse@gmail.com]
+If you have suggestions or issues, please email me at [jeanlacosse@gmail.com](www.google.com)

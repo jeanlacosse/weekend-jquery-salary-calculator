@@ -4,7 +4,7 @@ Breaking down the starting todo list ---
 
 TODO
 
-[] collect salary data
+[x] collect salary data
     [x] form
         [x]html input fields
         [x]submit button
@@ -13,7 +13,7 @@ TODO
             [x] clear input fields
             [x]collect employee
                 [x]add to array
-            [] append to DOM
+            [x] append to DOM
 
 []employee data
     [x] table - same headings as inputs

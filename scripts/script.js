@@ -53,7 +53,7 @@ function submitInfo() {
     <td class='emp grid'>${jobTitle}</td>
     <td id='empSal' class='grid sal'>$${annualSalary}</td>
     <td>
-         <button class="deleteEmp">Delete Employee</button>
+         <button class="deleteEmp" data-employee-id='${newEmployee.idNumber}'>Delete Employee</button>
     </td>
     </tr>
     `)
@@ -114,7 +114,11 @@ function deleteEmp () {
     // $(this).parents('tr') works as well
     // ^method chaining, I am removing the entire <tr> parent
 
-    
+    // everything I get from the DOM is goint to be a string
+
+    // .data() will grab any attribute that starts with data, ie: data-employee-id='456' will grab 456
+// const employeeId = $(this).data('employee-id');
+
     // create varialbe for monthly cost total
     let el = $('#monthlyCost')
     // grabbing the text from these variables
@@ -125,13 +129,13 @@ function deleteEmp () {
     console.log('in currentSal', currentSal);
     
     //  turning into numbers and subtracting them
-    let totalCost = openCost - (Number(currentSal) / 12);
+    // .toFixed(2) will stop any decimals after the second, or any other number
+    let totalCost = (openCost - (Number(currentSal) / 12)).toFixed(2);
     console.log('in newMonthlyCost', totalCost);
     // append newMonthlyCost to DOM
     el.empty();
-    el.append(`
-    ${totalCost}
-    `)
+    // change to text instead of appending the total. Setter, not append
+    el.text(totalCost);
 }
 
 
